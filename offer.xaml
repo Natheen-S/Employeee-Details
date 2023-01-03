@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Background="Lavender"
         Title="offer" Height="450" Width="800">
+    <ScrollViewer>
     <StackPanel >
         <StackPanel>
             <Label Height="54" Width="120" Margin="40,10,10,10">
@@ -17,12 +18,16 @@
                 </Label.Content>
             </Label>
         </StackPanel>
-        <StackPanel>
-            <Label x:Name="lbl_one" Width="249" HorizontalAlignment="Left" Height="50" Margin="30,20,10,10" FontSize="25" FontWeight="Bold"></Label>
-        </StackPanel>
-        <StackPanel>
+        <StackPanel Width="754"  Orientation="Horizontal">
+                <Label x:Name="lbl_one"  Width="271" Height="50" Margin="0,20,10,10" FontSize="25" FontWeight="Bold"/>
+                <Label Width="310" Height="136" x:Name="lbl_address" HorizontalAlignment="Right" FontSize="25" FontWeight="Bold" Margin="150,0,0,0"/>
+            </StackPanel>
+            
+            <StackPanel>
             <Label x:Name="lbl_two" FontSize="25" Height="1309" Width="744" ></Label>
-        </StackPanel>
+                
+            </StackPanel>
+            
     </StackPanel>
-
+    </ScrollViewer>
 </Window>
